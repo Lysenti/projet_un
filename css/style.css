@@ -58,14 +58,117 @@ a {
     color: var(--main-bg-color)
 }
 
-/******** Modifications Lena mise en forme des sections 1 et 2 *******/
-#lien-section1 {
-    color :#0065FC;
-    margin-left: 55%;
+/******** Modifications Lena mise en forme des sections 1 et 2. Création d'une liste pour le nav des ancres*******/
+/** tentative de modification du comportement et affichage du lien selon sa sélection
+#lien-section1:visited {
+    color: #0065FC;
 }
-#lien-section2 {
-    margin-left: 5%;
+
+#lien-section1:visited {
+    content:'' ;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #0065FC;
+    position: absolute;
+    top: -10px;
+}**/
+
+nav ul {
+    display: flex;   /** passage en élément flex pour pouvoir en changer l'alignement**/
+    justify-content: flex-end; /**alignement sur la doite**/
+
 }
+nav ul li {
+    margin-right: 50px;   /**Esapcement entre les deux éléments de la liste avec un écart sur la droite**/
+    list-style-type: none ; /**Effacement des puces**/
+}
+
+#liste-filtre {
+    display:flex;
+    list-style-type: none ;
+
+}
+
+.filtre {
+    display: flex; /* Utilisation de la disposition flex pour aligner les éléments horizontalement */
+    align-items: center; /* Aligner les éléments horizontalement */
+    
+}
+
+.filtre h3 {
+    margin-bottom: 20px; /* Ajouter de l'espace en dessous du titre */
+}
+
+.filtre ul {
+    display: flex;
+    list-style-type: none; /* Supprimer les puces de la liste */
+    padding: 0; /* Supprimer le remplissage par défaut de la liste */
+    margin: 20px; /* Supprimer les marges par défaut de la liste */
+}
+
+.filtre li {
+    display: flex; /* Utilisation de la disposition flex pour aligner les éléments de la liste horizontalement */
+    align-items: center; /* Aligner les éléments verticalement */
+    margin-right: 40px; /* Ajouter de l'espace entre les éléments de la liste */
+    padding: 10px;/*espacement interne à la bordure*/
+    border: 2px solid rgb(224, 222, 222);
+    border-radius: 20px;
+}
+
+.filtre li i {
+    margin-right: 10px; /* Ajouter de l'espace entre l'icône et le texte */
+}
+
+/** Réduction de la taille du logo en fonction de la taille du conteneur**/
+#logo {
+    width : 7%;
+    height: auto;
+}
+
+/**modification du h1**/
+h1 {
+    font-size : 28px;
+    margin-top: 7%;
+}
+
+/**modification de l'icone map**/
+#icone-map {
+    color : black;
+    font-size: 24px;
+}
+
+.recherche {
+    display : inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(224, 222, 222);
+    border-radius: 10px;
+ 
+}
+
+/**suppression des bordures pour la div recherche et mise en forme**/
+.bouton {
+    border: none;
+    height : 30px;
+    flex: 1;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#saisie-recherche {
+    flex : 2;
+}
+
+/**mise en forme du placeholder de la recherche**/
+#saisie-recherche::placeholder {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    color: black;/**Pourquoi l'affichage n'est pas en noir ?**/
+
+}
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

@@ -18,15 +18,45 @@
     <div class="main-container">
         <header>
             <!-- creation du logo et des deux ancres renvoyant aux sections hebergements et activites-->
-            <img src="images/logo/Booki.png" alt="Logo du site Booki" id="logo">
-            <a href="#section1" id="lien-section1">Hébergements</a>
-            <a href="#section2" id="lien-section2">activités</a>
-
+            
+            <nav>
+                <ul>
+                    <li><a href="#section1" id="lien-section1">Hébergements</a></li>
+                    <li><a href="#section2" id="lien-section2">activités</a></li>
+                </ul>
+            </nav>
+            <img src="images/logo/Booki.png" alt="Logo du site Booki" id="logo">    
         </header>
         <main>
+
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1><!--ajout h1 et p-->
+            <p>En plein centre-ville ou en pleine nature</p>
+                <!--Ajout de la div recherche-->
+            <div class="recherche" >
+                <button id="bouton-map" class="bouton">
+                    <i id="icone-map" class="fa-solid fa-location-dot"></i>
+                </button>
+                <input type="text" class="bouton" id="saisie-recherche" placeholder="Marseille, France">
+                <button id="bouton-recherche" class="bouton">Rechercher</button>
+
+            </div>
+                <!--Ajout de la div filtre-->
+            <div class="filtre">
+                <h3>Filtres</h3>
+                <ul>
+                    <li id="liste-filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</li>
+                    <li id="liste-filtre"><i class="fa-solid fa-person"></i>Familial</li>
+                    <li id="liste-filtre"><i class="fa-solid fa-heart"></i>Romantique</li>
+                    <li id="liste-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</li>
+                </ul>
+
+
+            </div>    
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="section1"> <!--ajout id section1-->
-
+                    <h2>Hébergements à Marseille</h2>
+                   
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
