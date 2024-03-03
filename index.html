@@ -18,20 +18,22 @@
     <div class="main-container">
         <header>
             <!-- creation du logo et des deux ancres renvoyant aux sections hebergements et activites-->
-            
-            <nav>
-                <ul>
-                    <li><a href="#section1" id="lien-section1">Hébergements</a></li>
-                    <li><a href="#section2" id="lien-section2">activités</a></li>
-                </ul>
-            </nav>
-            <img src="images/logo/Booki.png" alt="Logo du site Booki" id="logo">    
+          <div class ="en-tete"> 
+                <img src="images/logo/Booki.png" alt="Logo du site Booki" id="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#section1" id="lien-section1">Hébergements</a></li>
+                        <li><a href="#section2" id="lien-section2">activités</a></li>
+                    </ul>
+                </nav>
+                
+            </div>    
         </header>
         <main>
 
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1><!--ajout h1 et p-->
             <p>En plein centre-ville ou en pleine nature</p>
-                <!--Ajout de la div recherche-->
+                <!--Ajout de la div recherche--> <!--Attention il faut passer par un formulaire !-->
             <div class="recherche" >
                 <button id="bouton-map" class="bouton">
                     <i id="icone-map" class="fa-solid fa-location-dot"></i>
@@ -53,9 +55,14 @@
 
             </div>    
 
+            <div>
+
+
+            </div>
+
             <div class="hebergements-and-populaires">
                 <section class="hebergements" id="section1"> <!--ajout id section1-->
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                    
                 </section>
                 <section class="populaires">

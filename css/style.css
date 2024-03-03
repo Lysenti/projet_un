@@ -74,14 +74,40 @@ a {
     top: -10px;
 }**/
 
+.en-tete {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+
+    /** Réduction de la taille du logo en fonction de la taille du conteneur**/
+#logo {
+    width : 5%;
+    height: 10%;
+    align-items: center;
+ 
+}
+
 nav ul {
     display: flex;   /** passage en élément flex pour pouvoir en changer l'alignement**/
-    justify-content: flex-end; /**alignement sur la doite**/
+    align-items: center;
+    list-style-type: none ; /**Effacement des puces**/
+    margin-top: 0;
 
 }
-nav ul li {
-    margin-right: 50px;   /**Esapcement entre les deux éléments de la liste avec un écart sur la droite**/
-    list-style-type: none ; /**Effacement des puces**/
+
+nav ul li a {
+   margin-right: 50px;   /**Esapcement entre les deux éléments de la liste avec un écart sur la droite**/
+   text-decoration: none;
+   color: black;
+   font-weight: bold;
+   border-top: 2px solid transparent;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color :#0065FC;
+    border-top-color: #0065FC;
 }
 
 #liste-filtre {
@@ -114,23 +140,25 @@ nav ul li {
     padding: 10px;/*espacement interne à la bordure*/
     border: 2px solid rgb(224, 222, 222);
     border-radius: 20px;
+    
 }
+
+
+
 
 .filtre li i {
     margin-right: 10px; /* Ajouter de l'espace entre l'icône et le texte */
 }
 
-/** Réduction de la taille du logo en fonction de la taille du conteneur**/
-#logo {
-    width : 7%;
-    height: auto;
-}
+
 
 /**modification du h1**/
 h1 {
     font-size : 28px;
     margin-top: 7%;
 }
+
+
 
 /**modification de l'icone map**/
 #icone-map {
@@ -166,6 +194,7 @@ h1 {
     font-weight: bold;
     font-style: normal;
     color: black;/**Pourquoi l'affichage n'est pas en noir ?**/
+    opacity: 100%;
 
 }
 
