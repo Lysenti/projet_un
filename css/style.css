@@ -112,13 +112,9 @@ nav ul li a:hover, nav ul li a:active {
     border-top-color: #0065FC;
 }
 
-.footer ul li a {
- /**Esapcement entre les deux éléments de la liste avec un écart sur la droite**/
-    text-decoration: none;
-    color: black;
-    font-weight: normal;
 
-}
+
+
 
 #liste-filtre {
     display:flex;
@@ -128,35 +124,38 @@ nav ul li a:hover, nav ul li a:active {
 
 .filtre {
     display: flex; /* Utilisation de la disposition flex pour aligner les éléments horizontalement */
+
+    flex-wrap: wrap;
     align-items: center; /* Aligner les éléments horizontalement */
-    
+    justify-content: space-between;
+    width: 50%;
+   
 }
+
+#bouton-filtre {
+    border-radius: 30px 30px 30px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
+    background-color: white;
+    border: 2px solid rgb(224, 222, 222);
+}
+
+#bouton-filtre:hover, #bouton-filtre a:active { /*background et opacité boutons filtres en mouse over*/
+    background-color: rgba(0, 101, 252, 0.2);
+
+}
+
+#bouton-filtre i {
+    margin-right: 8px;
+}
+
 
 .filtre h3 {
     margin-bottom: 20px; /* Ajouter de l'espace en dessous du titre */
 }
 
-.filtre ul {
-    display: flex;
-    list-style-type: none; /* Supprimer les puces de la liste */
-    padding: 0; /* Supprimer le remplissage par défaut de la liste */
-    margin: 20px; /* Supprimer les marges par défaut de la liste */
-}
 
-.filtre li {
-    display: flex; /* Utilisation de la disposition flex pour aligner les éléments de la liste horizontalement */
-    align-items: center; /* Aligner les éléments verticalement */
-    margin-right: 40px; /* Ajouter de l'espace entre les éléments de la liste */
-    padding: 10px;/*espacement interne à la bordure*/
-    border: 2px solid rgb(224, 222, 222);
-    border-radius: 20px;
-    
-}
-
-
-.filtre li i {
-    margin-right: 10px; /* Ajouter de l'espace entre l'icône et le texte */
-}
 
 
 
@@ -171,7 +170,7 @@ h1 {
 /**modification de l'icone map**/
 #icone-map {
     color : black;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .recherche {
@@ -180,6 +179,9 @@ h1 {
     justify-content: center;
     border: 1px solid rgb(224, 222, 222);
     border-radius: 10px;
+    height: 45px;
+    margin-bottom: 20px;
+    margin-top: 20px;
  
 }
 
@@ -188,33 +190,60 @@ h1 {
 /**suppression des bordures pour la div recherche et mise en forme**/
 #bouton-map {
     border-radius: 10px 0px 0px 10px;
+
+
 }
 
 #bouton-recherche {
     border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    color: #F2F2F2;
+    font-weight: bold;
+    font-size: 16px;
+    font-style: normal;
 }
+
+
 
 .bouton {
     border: none;
-    height : 30px;
+    height : 35px;
     flex: 1;
-    padding: 0 10px;
+    padding: 0px 10px;
+    height: 45px;
+
 }
 
 
 #saisie-recherche {
     flex : 2;
+    width: 150px;
 }
 
 /**mise en forme du placeholder de la recherche**/
 #saisie-recherche::placeholder {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     font-style: normal;
     color: black;/**Pourquoi l'affichage n'est pas en noir ?**/
     opacity: 100%;
 
 }
+
+.information i {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 50%;
+    width: 15px;
+    height: 25px;
+    border: 1px solid rgb(224, 222, 222);
+    padding-left: 9px;/*pas satisfaite de la manière dont j'ai formé le cercle autour de l'i*/
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+
 
 
 /****** Hebergements And Populaires ***********/
@@ -354,6 +383,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: center;
+    margin-left: 20px;
  
 }
 
@@ -379,6 +409,7 @@ h1 {
 
 .activites-title {
     margin-top: 50px;
+    margin-left: 20px;
 
 }
 
@@ -397,8 +428,36 @@ h1 {
 .footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
+    background-color: var(--main-bg-color);
+    border-radius: 20px 20px 0px 0px;
+    padding: 30px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding-right: 50px;
+
 }
+
+footer ul {
+    padding: 0px;
+}
+
+
+.footer ul li {
+    /**Espacement entre les deux éléments de la liste avec un écart sur la droite**/
+       text-align: left;  
+       text-decoration: none;
+       color: black;
+       font-weight: normal;
+       list-style-type: none ; 
+       margin-right: 180px;
+       margin-bottom: 10px;
+
+   
+}
+
+
+
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement 
