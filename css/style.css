@@ -222,6 +222,7 @@ h1 {
 }
 
 .hebergements-section {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -229,8 +230,23 @@ h1 {
  
 }
 
+.hebergements-section a {
+    width: 33%;
 
+}
 
+.hebergements-cards  {
+    margin-top: 10px;
+
+}
+
+.hebergements-cards img {
+    width: 100%;/*pas satisfaite de mon affichage, je voudrais quelque chose d'auto --- 10vw*/
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+
+}
 
 .hebergements-title {
     display: flex;
@@ -240,20 +256,9 @@ h1 {
 
 
 
-.hebergements-cards {
-    width: auto;
-    margin-top: 10px;
 
 
-}
 
-.hebergements-cards img {
-    width: 10vw;/*pas satisfaite de mon affichage, je voudrais quelque chose d'auto ! remettre en 9vw*/
-    height: 136px;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-
-}
 
 .hebergements-cards .card-content {
     width: 100%;
