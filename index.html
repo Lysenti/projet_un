@@ -18,12 +18,12 @@
     <div class="main-container">
         <header>
             <!-- creation du logo et des deux ancres renvoyant aux sections hebergements et activites-->
-          <div class ="en-tete"> 
+            <div class ="en-tete"> 
                 <img src="images/logo/Booki.png" alt="Logo du site Booki" id="logo">
                 <nav>
                     <ul>
                         <li><a href="#section1" id="lien-section1">Hébergements</a></li>
-                        <li><a href="#section2" id="lien-section2">activités</a></li>
+                        <li><a href="#section2" id="lien-section2">Activités</a></li>
                     </ul>
                 </nav>
                 
@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="filtre-boutons">
-                            <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</button></a>
+                            <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button></a>
                             <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-person"></i>Familial</button></a>
                             <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</button></a>
                             <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button></a>
@@ -59,8 +59,12 @@
                     </div> 
                     
                     <div class="information"><!--Ajout classe information-->
-                        <p><i class="fa-solid fa-info"></i><span>Plus de 500 logements sont disponibles dans cette ville</span></p>
-
+                        <p>
+                            <span class="info-container">
+                                <i class="fa-solid fa-info"></i>
+                                <span id="information-texte">Plus de 500 logements sont disponibles dans cette ville</span>
+                            </span>
+                        </p>
 
                     </div>
                 </div>
@@ -259,7 +263,7 @@
                     </section>
                 </div>
 
-                <section class="activites">
+                <section class="activites" id="section2">
                     <!--ajout nouvelle div class pour les activités avec l'id-->
                     <h2 class="activites-title">Activités à Marseille</h2>                        
 
