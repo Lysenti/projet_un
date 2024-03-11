@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top: 0;
 }
 
 .main-container {
@@ -83,6 +84,8 @@ a {
     justify-content: space-between;
     align-items: center;
 
+
+
     }
 
     /** Réduction de la taille du logo en fonction de la taille du conteneur**/
@@ -90,15 +93,39 @@ a {
     width : 5%;
     height: 10%;
     align-items: center;
+    padding-top: 10px;
 
 }
 
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 
-nav ul {
-    display: flex;   /** passage en élément flex pour pouvoir en changer l'alignement**/
+
+
+}
+
+
+.grid-item {
+    border-top: 3px solid transparent;
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.grid-item:hover , .grid-item.focus{
+    color: #0065FC;
+    border-top-color: #0065FC;
+}
+
+
+
+
+/*nav ul {
+    display: flex;   /** passage en élément flex pour pouvoir en changer l'alignement
     align-items: center;
-    list-style-type: none ; /**Effacement des puces**/
+    list-style-type: none ; /**Effacement des puces
     margin-top: 0;
     padding: 0;
 
@@ -106,7 +133,7 @@ nav ul {
 }
 
 nav ul li a {
-   margin-right: 50px;   /**Esapcement entre les deux éléments de la liste avec un écart sur la droite**/
+   margin-right: 50px;   /**Esapcement entre les deux éléments de la liste avec un écart sur la droite
    text-decoration: none;
    color: black;
    font-weight: bold;
@@ -118,7 +145,7 @@ nav ul li a {
 nav ul li a:hover, nav ul li a:active {
     color :#0065FC;
     border-top-color: #0065FC;
-}
+}*/
 
 
 
@@ -582,23 +609,57 @@ h2 {
         }
 
 
-    nav ul li a:hover, nav ul li a:active {
+    /*nav ul li a:hover, nav ul li a:active {
         color :#0065FC;
         border-bottom-color: #0065FC;
         border-top-color: transparent;
-    }
+    }*/
 
      
-        /** Réduction de la taille du logo en fonction de la taille du conteneur**/
+    
     #logo {
         width : 20%;
         height: 40%;
         align-items: center;
         margin-top: 20px;
+        margin-bottom: 20px;
     
     }
+
+    nav {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    
+    }
+    
+    
+    .grid-item {
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid rgb(236, 236, 236);
+        text-align: center;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .grid-item:hover , .grid-item.focus{
+        color: #0065FC;
+        border-bottom-color: #0065FC;
+        border-top-color: transparent;
+    }
+
+
+
+
+
+
    
-    nav  {
+    /*nav  {
         width: 100%;
         list-style-type: none ;
         margin-top: 20px;
@@ -625,14 +686,16 @@ h2 {
         font-weight: bold;
         padding-top: 5px;
         padding-bottom: 10px;
-        padding-left: 10%;/*pas satisfaite de l'affichage*/
+        padding-left: 10%;/*pas satisfaite de l'affichage
         border-bottom: 2px solid rgb(241, 241, 241);
         margin: 0;
+    }*/
 
-
+    h1 {
+        font-size : 22px;
+        margin-top: 7%;
+        padding-right: 20px;
     }
-
-
 
 
     body {
@@ -665,15 +728,14 @@ h2 {
 
 
     .information {
-        text-align: center;
+        text-align: left;
  
     }
 
     .info-container {
         display: inline-flex;
-        align-items: center;
+        /*align-items: center;*/
         text-align: left;
-
 
     }
     
