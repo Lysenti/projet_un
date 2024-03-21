@@ -28,7 +28,7 @@
                 </nav>-->
                 <nav>
                     <div class="grid-container">
-                        <a href="#section1" class="grid-item" id="element1">Hébergements</a>
+                        <a href="#section1"  class="grid-item" id="element1">Hébergements</a>
                         <a href="#section2" class="grid-item" id="element2">Activités</a>
 
                     </div>
@@ -44,12 +44,15 @@
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1><!--ajout h1 et p-->
                     <p>En plein centre-ville ou en pleine nature</p>
                         <!--Ajout de la div recherche un formulaire !-->
-                    <form class="recherche" action ="" method="get">
+                    <form class="recherche"  method="get">
                         <button id="bouton-map" class="bouton">
                             <i id="icone-map" class="fa-solid fa-location-dot"></i>
                         </button>
                             <input type="text" class="bouton" id="saisie-recherche" placeholder="Marseille, France">
-                        <button id="bouton-recherche" class="bouton">Rechercher</button>
+                        <button id="bouton-recherche" class="bouton">
+                            <span class="texte">Rechercher</span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
 
                     </form>
                         <!--Ajout de la div filtre-->
@@ -60,10 +63,10 @@
                         </div>
 
                         <div class="filtre-boutons">
-                            <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button></a>
-                            <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-person"></i>Familial</button></a>
-                            <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</button></a>
-                            <a href="#"><button class="bouton" id="bouton-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button></a>
+                            <a href="#"><button class="bouton bouton-filtre"><i class="fa-solid fa-money-bill-wave"></i>Économique</button></a>
+                            <a href="#"><button class="bouton bouton-filtre"><i class="fa-solid fa-person"></i>Familial</button></a>
+                            <a href="#"><button class="bouton bouton-filtre"><i class="fa-solid fa-heart"></i>Romantique</button></a>
+                            <a href="#"><button class="bouton bouton-filtre"><i class="fa-solid fa-fire"></i>Nos pépites</button></a>
                         </div>    
                     </div> 
                     
@@ -278,7 +281,7 @@
 
                     <div class = "activites-section">
                         <a href="#">
-                            <article class ="card" id="activites-card">
+                            <article class ="card activites-card">
                                 <img src="./images/activites/reno-laithienne.jpg" alt="Image montrant le vieux port">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -288,7 +291,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class ="card" id="activites-card">
+                            <article class ="card activites-card">
                                 <img src="images/activites/paul-hermann.jpg" alt="Image montrant un paysage">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -298,7 +301,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class ="card" id="activites-card">
+                            <article class ="card activites-card">
                                 <img src="images/activites/kilyan-sockalingum.jpg" alt="Image montrant un paysage avec la mer">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -308,7 +311,7 @@
                             </article>
                         </a>
                         <a href="#">
-                            <article class ="card" id="activites-card">
+                            <article class ="card activites-card">
                                 <img src="images/activites/florian-wehde.jpg" alt="Image montrant un paysage urbain">
                                 <div class="card-content">
                                     <div class="card-txt">
@@ -322,29 +325,29 @@
             </main>
         <footer>
             <section class="footer">
-                <article class="a-propos">                
+                <nav class="a-propos">                
                     <ul>
-                        <h3>À propos</h3>
+                        <li><h3>À propos</h3></li>
                         <li><a href="#" id="lien1">Fonctionnement du site</a></li>
                         <li><a href="#" id="lien2">Conditions générales</a></li>
                         <li><a href="#" id="lien3">Données et confidentialité</a></li>
                     </ul>
-                </article>    
-                <article class="nos-hebergements">                
+                </nav>    
+                <nav class="nos-hebergements">                
                     <ul>
-                        <h3>Nos hébergements</h3>
+                        <li><h3>Nos hébergements</h3></li>
                         <li><a href="#" id="lien4">Charte qualité</a></li>
                         <li><a href="#" id="lien5">Proposer votre hôtel</a></li>
                     </ul>
-                </article>
-                <article class="assistance">
+                </nav>
+                <nav class="assistance">
                     
                     <ul>
-                        <h3>Assistance</h3>
+                        <li><h3>Assistance</h3></li>
                         <li><a href="#" id="lien6">Centre d'aide</a></li>
                         <li><a href="#" id="lien7">Nous contacter</a></li>
                     </ul>
-                </article>
+                </nav>
 
 
             </section>
